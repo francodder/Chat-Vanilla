@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oreo Chat</title>
+  <link rel="stylesheet" href="./index.css
+    " />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  
+  <section class="registro-section" id="registro">
+    <div class="registro__container">
+      <form class="registro__form" action="">
+        <button class="registro__salir" onclick="return cerrarRegistro()"></button>
+        <h2 class="registro__titulo">Registro</h2>
+        <div class="registro__input-container">
+          <label for="nombre">
+            <span class="registro__etiqueta">Nombre y Apellido</span>
+            <br class="registro__salto">
+            <input type="text" class="registro__input" id="nombre" name="nombre" spellcheck="false" autocomplete="false">
+          </label>
+        </div>
+        <div class="registro__input-container">
+          <label for="email-registro">
+            <span class="registro__etiqueta">E-mail</span>
+            <br class="registro__salto">
+            <input type="email" class="registro__input" id="email-registro" name="email-registro" spellcheck="false"
+              autocomplete="email">
+          </label>
+        </div>
+        <div class="registro__input-container">
+          <label for="nick">
+            <span class="registro__etiqueta">Nick</span>
+            <br class="registro__salto">
+            <input type="text" class="registro__input" id="nick" name="nick" spellcheck="false" autocomplete="false">
+          </label>
+        </div>
+        <div class="registro__input-container">
+          <label for="pass-registro">
+            <span class="registro__etiqueta">Contraseña</span>
+            <br class="registro__salto">
+            <input type="password" class="registro__input" id="pass-registro" name="pass-registro" spellcheck="false">
+          </label>
+        </div>
+        <input type="submit" class="registrar activado" value="Registrarse"/>
+      </form>
+    </div>
+  </section>
+  
+  <main>
+    <img class="logo" src="./assets/images/full-logo.svg" alt="logo" />
+    <section class="formulario__contenedor">
+      <form action="./sala.html" method="get">
+        <div class="email">
+          <label for="email">
+            <span>E-mail:</span>
+            <br />
+            <input type="email" class="input" id="email" name="email" spellcheck="false" autocomplete="on" />
+          </label>
+        </div>
+        <div class="nick">
+          <label for="nick">
+            <span>Nick:</span>
+            <br />
+            <input type="text" class="input" id="nick2" name="nick2" spellcheck="false" autocomplete="off" />
+          </label>
+        </div>
+        <input type="submit" class="ingresar desactivado" id="ingresar" value="Ingresar" onclick="ingresar" disabled />
+      </form>
+     
+    </section>
+  </main>
+  <script src="./script-index.js"></script>
+</body>
+
+</html>

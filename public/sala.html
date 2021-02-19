@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oreo Chat</title>
+    <link
+      rel="stylesheet"
+      href="./sala.css
+    "
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="eventos__container" onclick="notificar()">
+    </div>
+    <main id="chat">
+      <section class="barra-superior" id="superior" onclick="minimizar()">
+        <div class="informacion__container">  
+          <span></span>
+          <div class="informacion__titulos">
+            <h1>Sala de Prueba</h1>
+            <h3>Encode SA</h3>
+          </div>
+        </div>
+        <div class="acciones__container">
+          <span class="acciones__triangulo" id="triangulo"></span>
+        </div>
+      </section>
+      <section class="seccion-mensajes" id="mensajes">
+        <div class="burbuja burbuja-izq" style="display: none;" id="burbuja">
+          <p class="burbuja__nombre">Franco</p>
+          <p class="burbuja__hora">18:53</p>
+          <p class="burbuja__mensaje">Hola, cómo estás?</p>
+        </div>
+        <div class="burbuja burbuja-der" style="display: none;" id="burbuja2">
+          <p class="burbuja__nombre">Teo</p>
+          <p class="burbuja__hora">18:54</p>
+          <p class="burbuja__mensaje">
+            Hola, cómo estás? Este es un mensaje de prueba para saber como estas
+            y cuando lo sepamos te vamos a dejar ir
+          </p>
+        </div>
+      </section>
+      <section class="barra-inferior" id="inferior">
+        <!-- <button class="boton-emoji"></button> -->
+        <div class="mi-mensaje__contenedor">
+          <div
+            class="mi-mensaje__input"
+            id="mensaje"
+            contenteditable="true"
+            data-placeholder="Escriba su mensaje aquí"
+          ></div>
+        </div>
+        <button class="boton-enviar" id="enviar" onclick="enviar()"></button>
+      </section>
+    </main>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script-sala.js"></script>
+  </body>
+</html>

@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  /* Colors */
+  --azul: #0058c9;
+  --celeste: #59c5f2;
+  --blanco: #ffffff;
+  --negro: #000000;
+  --negro-calido: #272425;
+  --positivo: #46cf06;
+  --negativo: #ed1c24;
+}
+
+html {
+  /* Conversión a pixeles: 1rem == 10px */
+  font-size: 62.5%;
+  
+  font-weight: 500;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--celeste);
+}
+
+main {
+  margin-top: -40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 280px;
+  margin-bottom: 20px;
+}
+
+.formulario__contenedor {
+  width: 430px;
+  height: 350px;
+  border-radius: 8px;
+  background-color: var(--azul);
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+br {
+  content: "";
+  margin: 1.2rem;
+  display: block;
+}
+
+span {
+  font-size: 2.2rem; /* 2rem == 20px*/
+  font-weight: 500;
+  user-select: none;
+  color: var(--blanco);
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 5px 15px;
+  font-size: 2.2rem;
+  color: var(--negro-calido);
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+
+.email {
+  width: 100%;
+}
+
+.nick {
+  margin-top: -80px;
+  width: 100%;
+  /* margin-top: 20px; */
+}
+
+.ingresar {
+  margin-top: -70px;
+}
+
+.ingresar {
+  height: 40px;
+  width: 180px;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--blanco);
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+
+/* FIX */
+/* .ingresar {
+  margin-top: -50px;
+} */
+
+
+.activado {
+  background-color: var(--positivo);
+}
+
+.desactivado {
+  background-color: gray;
+}
+
+.nueva-cuenta {
+  margin-top: -20px;
+  font-size: 1.6rem;
+  font-family: Roboto, sans-serif;
+  font-style: oblique;
+  color: var(--blanco);
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.nueva-cuenta:hover {
+  text-decoration: underline;
+}
+
+.trade-mark {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--negro-calido);
+  align-self: flex-start;
+}
+
+.trade-mark::selection {
+  color: var(--blanco);
+}
+
+
+/* REGISTRO */
+
+.registro-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(70, 69, 69, 0.5);
+}
+
+.registro__container {
+  position: relative;
+  width: 450px;
+  height: 580px;
+  padding: 40px 60px;
+  padding-top: 15px;
+  display: flex;
+  border-radius: 8px;
+  background-color: var(--azul);
+}
+
+.registro__salir {
+  position: absolute;
+  width: 35px;
+  height: 25px;
+  top: 23px;
+  left: 18px;
+  outline: none;
+  border: none;
+  background: url(./assets/icons/back-arrow.png) center / cover no-repeat;
+}
+
+.registro__titulo {
+  align-self: center;
+  font-family: Roboto, sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  color: white;
+}
+
+.registro__form {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.registro__input-container:first-of-type {
+  margin-top: 40px;
+}
+
+.registro__input-container {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.registro__etiqueta {
+  font-family: Roboto, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  user-select: none;
+  color: var(--blanco);
+}
+
+.registro__salto {
+  content: "";
+  margin: 1rem;
+  display: block;
+}
+
+.registro__input {
+  width: 100%;
+  height: 40px;
+  padding: 5px 15px;
+  font-size: 2.2rem;
+  color: var(--negro-calido);
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+
+.registrar {
+  height: 40px;
+  width: 180px;
+  margin-top: 40px;
+  font-family: Roboto, sans-serif ;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--blanco);
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  align-self: center;
+}
